@@ -13,21 +13,18 @@ public class Intro : MonoBehaviour
 
     public float typingSpeed;
 
+    public int maxSentence = 5;
+
     void Start()
     {
         textDisplay.text = string.Empty;
-        StartCoroutine(TypeSentence());
+        StartIntro();
     }
 
     // Update is called once per frame
     void Update()
     {
         if (textDisplay.text == sentences[index])
-        {
-            NextSentence();
-        }
-
-        if (Input.GetKeyDown(KeyCode.Return))
         {
             NextSentence();
         }
@@ -52,8 +49,9 @@ public class Intro : MonoBehaviour
     {
         if (index < sentences.Length - 1)
         {
+            Debug.Log("NextSentence");
             index++;
-            textDisplay.text = "";
+            textDisplay.text = string.Empty;
             StartCoroutine(TypeSentence());
         }
         else

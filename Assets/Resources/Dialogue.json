@@ -1,0 +1,330 @@
+{
+    "dialogues": {
+        "Npc1": [
+            {
+              "text": "Hello, player!",
+              "order": 1,
+              "isOption": false
+            },
+            {
+              "text": "Do you want to join our team?",
+              "order": 2,
+              "isOption": true,
+              "Option_One_Text": "Yes, I'd love to!",
+              "Option_Two_Text": "No, thanks."
+            }
+        ],
+        "Npc2": [
+        {
+            "text": "Hello, player!",
+            "order": 1,
+            "isOption": false
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        }
+        ]           
+        ,
+        "Npc3": [
+        {
+            "text": "Hello, player!",
+            "order": 1,
+            "isOption": false
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        }
+        ]           
+        ,
+        "Npc4": [
+        {
+            "text": "Hello, player!",
+            "order": 1,
+            "isOption": false
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        }
+        ]           
+        ,
+        "Npc5": [
+        {
+            "text": "Hello, player!",
+            "order": 1,
+            "isOption": false
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        },
+        {
+            "text": "Do you want to join our team?",
+            "order": 2,
+            "isOption": true,
+            "Option_One_Text": "Yes, I'd love to!",
+            "Option_Two_Text": "No, thanks."
+        }
+        ]           
+    }
+  }
+  
