@@ -1,5 +1,38 @@
 {
     "dialogues": {
+        "Intro": [
+            {
+                "text": "Hello, Aurelia Blythe!\nWelcome to the world of Underwold. My name is Gideonn.",
+                "order": 1,
+                "isOption": false,
+                "nextOrder": 2
+            },
+            {
+                "text": "In this game, your goal is find out who killed your Lord Zed.",
+                "order": 2,
+                "isOption": false,
+                "nextOrder": 3
+            },
+            {
+                "text": "There is two phases in this game: Colletiong the evidences, and confronting the suspects.",
+                "order": 3,
+                "isOption": false,
+                "nextOrder": 4
+            },
+            {
+                "text": "In the first phase, you will have to talk to 5 NPCs. Three of them will give you evidences or clues. Be careful, the evidences you get might increase or decrease your winrate.",
+                "order": 4,
+                "isOption": false,
+                "nextOrder": 5
+            },
+            {
+                "text": "The other two npcs will give you ablities. Be careful, the abilities you get might increase or decrease your winrate.",
+                "order": 5,
+                "isOption": false,
+                "nextOrder": -1
+            }
+
+        ],
         "Npc1": [
             {
               "text": "Hello, player!",
@@ -90,8 +123,7 @@
             "Option_One_Text": "Yes, I'd love to!",
             "Option_Two_Text": "No, thanks."
         }
-        ]           
-        ,
+        ],
         "Npc3": [
         {
             "text": "Hello, player!",
@@ -168,8 +200,7 @@
             "Option_One_Text": "Yes, I'd love to!",
             "Option_Two_Text": "No, thanks."
         }
-        ]           
-        ,
+        ],
         "Npc4": [
         {
             "text": "Hello, player!",
@@ -246,8 +277,7 @@
             "Option_One_Text": "Yes, I'd love to!",
             "Option_Two_Text": "No, thanks."
         }
-        ]           
-        ,
+        ],
         "Npc5": [
         {
             "text": "Hello, player!",

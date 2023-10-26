@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 [System.Serializable]
 public class DialogueData {
+    public List<DialogueEntry> Intro;
     public List<DialogueEntry> Npc1;
     public List<DialogueEntry> Npc2;
     public List<DialogueEntry> Npc3;
@@ -30,6 +31,8 @@ public class DialogueEntry {
     public string Option_One_Text;
 
     public string Option_Two_Text;
+
+    public int nextOrder;
 }
 
 

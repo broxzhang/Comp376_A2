@@ -3,8 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+// [System.Serializable]
+// public class DialogueData {
+//     public List<DialogueEntry> Intro;
+// }
+
+
 public class Intro : MonoBehaviour
 {
+    public GameObject currentPanel; // 你可以在Inspector中拖放当前的Panel
+    public GameObject npcPanel; // 你可以在Inspector中拖放NpcPanel
     // Start is called before the first frame update
     public TextMeshProUGUI textDisplay;
     public string[] sentences;
@@ -15,48 +23,86 @@ public class Intro : MonoBehaviour
 
     public int maxSentence = 5;
 
+    public List<DialogueEntry> dialoguesList_Intro;
+    public DialogueContainer dialogues;
+    public DialogueEntry currentDialogue;
+
+    private bool isTyping = false;
+
     void Start()
     {
         textDisplay.text = string.Empty;
+        
+        TextAsset textAsset = Resources.Load<TextAsset>("Dialogue");
+        dialogues = JsonUtility.FromJson<DialogueContainer>(textAsset.text);
+
+        this.dialoguesList_Intro = this.dialogues.dialogues.Intro;
+
         StartIntro();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (textDisplay.text == sentences[index])
+        if (Input.GetMouseButtonDown(0))
         {
-            NextSentence();
+            if (isTyping)
+            {
+                StopAllCoroutines();
+                textDisplay.text = currentDialogue.text;
+                isTyping = false;
+                return;
+            }
+
+            if (currentDialogue.nextOrder > 0)
+            {
+                textDisplay.text = string.Empty;
+                currentDialogue = GetDialogueByOrder(currentDialogue.nextOrder);
+                StartCoroutine(TypeSentence(currentDialogue.text));
+            }
+            else if (currentDialogue.nextOrder == -1)
+            {
+                textDisplay.text = currentDialogue.text;
+                currentDialogue = null;
+            }
+            
+            if (currentDialogue == null)
+            {
+                currentPanel.SetActive(false);
+                npcPanel.SetActive(true);
+            }
         }
     }
 
     public void StartIntro()
     {
-        index = 0;
-        StartCoroutine(TypeSentence());
+        index = 1;
+        this.currentDialogue = GetDialogueByOrder(index);
+        StartCoroutine(TypeSentence(currentDialogue.text));
     }
 
-    IEnumerator TypeSentence()
+    IEnumerator TypeSentence(string sentence)
     {
-        foreach(char letter in sentences[index].ToCharArray())
+        isTyping = true;
+
+        foreach (char letter in sentence.ToCharArray())
         {
             textDisplay.text += letter;
-            yield return new WaitForSeconds(typingSpeed);
+            yield return new WaitForSeconds(0.05f);
         }
+
+        isTyping = false;
     }
 
-    void NextSentence()
+    public DialogueEntry GetDialogueByOrder(int order)
     {
-        if (index < sentences.Length - 1)
+        foreach (DialogueEntry dialogue in dialoguesList_Intro)
         {
-            Debug.Log("NextSentence");
-            index++;
-            textDisplay.text = string.Empty;
-            StartCoroutine(TypeSentence());
+            if (dialogue.order == order)
+            {
+                return dialogue;
+            }
         }
-        else
-        {
-            gameObject.SetActive(false);
-        }
+        return null;
     }
 }
