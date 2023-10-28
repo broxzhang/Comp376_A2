@@ -1,37 +1,67 @@
 {
     "dialogues": {
+
         "Intro": [
             {
-                "text": "Hello, Aurelia Blythe!\nWelcome to the world of Underwold. My name is Gideonn.",
+                "text": "Game introduction:",
                 "order": 1,
                 "isOption": false,
                 "nextOrder": 2
             },
             {
-                "text": "In this game, your goal is find out who killed your Lord Zed.",
+                "text": "Hello, player, welcome to my game.",
                 "order": 2,
                 "isOption": false,
                 "nextOrder": 3
             },
             {
-                "text": "There is two phases in this game: Colletiong the evidences, and confronting the suspects.",
+                "text": "In this game, you will play as an underground private detective. By conversing with five different NPCs, you will acquire items, abilities, and evidence to reconstruct the crime process.",
                 "order": 3,
                 "isOption": false,
                 "nextOrder": 4
             },
             {
-                "text": "In the first phase, you will have to talk to 5 NPCs. Three of them will give you evidences or clues. Be careful, the evidences you get might increase or decrease your winrate.",
+                "text": "Main machnics in this game:",
                 "order": 4,
                 "isOption": false,
                 "nextOrder": 5
             },
             {
-                "text": "The other two npcs will give you ablities. Be careful, the abilities you get might increase or decrease your winrate.",
+                "text": "There are two phases in this game: Collecting evidence, and confronting the suspects.",
                 "order": 5,
+                "isOption": false,
+                "nextOrder": 6
+            },
+            {
+                "text": "In the first phase, you will converse with five NPCs. The right choices can provide positive feedback to increase your win rate. Conversely, wrong or inappropriate choices may penalize you, decreasing your win rate. Note: The highest win rate is 100%, and the lowest is -100%.",
+                "order": 6,
+                "isOption": false,
+                "nextOrder": 7
+            },
+            {
+                "text": "Among the five NPCs, the librarian, female butler, and postman provide evidence. By talking to them, you can collect evidence.",
+                "order": 7,
+                "isOption": false,
+                "nextOrder": 8
+            },
+            {
+                "text": "The chief of police and the doctor provide abilities. By conversing with them and choosing the correct options, you will acquire certain abilities (positive or negative) to use in the second phase.",
+                "order": 8,
+                "isOption": false,
+                "nextOrder": 9
+            },
+            {
+                "text": "In the second phase, you will directly confront the suspect of the case. During this, the suspect will tell lies. Choose the correct evidence you have as bullets to hit the sentences that represent lies. Doing so will allow you to continue exposing the suspect. Otherwise, you won't be able to effectively accuse them, resulting in their escape (failure). Once you break through all of the suspect's lies, they will have no more excuses and will confess (success).",
+                "order": 9,
+                "isOption": false,
+                "nextOrder": 10
+            },
+            {
+                "text": "Here's the case introduction: A renowned businessman suddenly died at a private party at his home. The autopsy report showed the cause of death as a sudden heart attack with a drug reaction. However, what makes this case suspicious is that the deceased was always in good health and had no history of heart disease. Your task is to investigate this murder. After obtaining sufficient evidence, you will confront the suspect, using the evidence to break through the criminal's lies.",
+                "order": 10,
                 "isOption": false,
                 "nextOrder": -1
             }
-
         ],
         "Npc1": [
             {
