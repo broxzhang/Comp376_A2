@@ -11,8 +11,8 @@ using TMPro;
 
 public class Intro : MonoBehaviour
 {
-    public GameObject currentPanel; // 你可以在Inspector中拖放当前的Panel
-    public GameObject npcPanel; // 你可以在Inspector中拖放NpcPanel
+    public GameObject currentPanel;
+    public GameObject npcPanel;
     // Start is called before the first frame update
     public TextMeshProUGUI textDisplay;
     public string[] sentences;

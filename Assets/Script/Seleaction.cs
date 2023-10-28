@@ -59,8 +59,8 @@ public class Seleaction : MonoBehaviour
     public List<DialogueEntry> dialoguesList_Npc4;
     public List<DialogueEntry> dialoguesList_Npc5;
 
-
-
+    public Image displayImage;
+    public Sprite[] imageOptions;
 
     public List<DialogueEntry> currentDialogues;
 
@@ -82,6 +82,8 @@ public class Seleaction : MonoBehaviour
 
         TextAsset textAsset = Resources.Load<TextAsset>("Dialogue");
         dialogues = JsonUtility.FromJson<DialogueContainer>(textAsset.text);
+
+        displayImage.sprite = imageOptions[NpcIndex];
         // Debug.Log(textAsset.text);
         // if (dialogues != null && dialogues.dialogues.Npc1 != null) {
         //     Debug.Log("Number of dialogues for Npc1: " + dialogues.dialogues.Npc1.Count);

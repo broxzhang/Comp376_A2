@@ -628,6 +628,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winrate: 0.5
   NpcIndex: 0
+  NpcSelected: 
+  old_man_talked: 0
+  plice_chief_talked: 0
+  mail_man_talked: 0
+  female_butler_talked: 0
+  young_doctor_talked: 0
 --- !u!4 &418758094
 Transform:
   m_ObjectHideFlags: 0
@@ -700,7 +706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: Please selete the NPC you want to talk to
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -1255,8 +1261,10 @@ MonoBehaviour:
   - {fileID: 671536660}
   - {fileID: 438553397}
   - {fileID: 456983026}
+  next_chapter: {fileID: 1795560768}
+  winRateText: {fileID: 505217825}
   currentPanel: {fileID: 484155768}
-  seleactionPanel: {fileID: 343077398}
+  seleactionPanel: {fileID: 1098454774}
 --- !u!1 &505217823
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1277,7 @@ GameObject:
   - component: {fileID: 505217826}
   - component: {fileID: 505217825}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: NpcWinRate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2123,7 +2131,7 @@ GameObject:
   - component: {fileID: 715490677}
   - component: {fileID: 715490676}
   m_Layer: 5
-  m_Name: Image
+  m_Name: DisplayNpc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2168,7 +2176,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6b696c51091d78c488af18b9f1b02fde, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c0b2ad09f92b3db48a4c0f9b28dbf436, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2861,7 +2869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1098454775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2914,6 +2922,13 @@ MonoBehaviour:
   dialoguesList_Npc3: []
   dialoguesList_Npc4: []
   dialoguesList_Npc5: []
+  displayImage: {fileID: 715490676}
+  imageOptions:
+  - {fileID: 21300000, guid: 18a5d5d6626ab9044b3e98dadff7b088, type: 3}
+  - {fileID: 21300000, guid: 0c72464e6267d754a8ffaf5eb3466c39, type: 3}
+  - {fileID: 21300000, guid: 0c72464e6267d754a8ffaf5eb3466c39, type: 3}
+  - {fileID: 21300000, guid: c0b2ad09f92b3db48a4c0f9b28dbf436, type: 3}
+  - {fileID: 21300000, guid: 279f286c61ffc1a4697de7ab31e1d6d5, type: 3}
   currentDialogues: []
   currentDialogue:
     text: 
@@ -4826,7 +4841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1913546108
 RectTransform:
   m_ObjectHideFlags: 0

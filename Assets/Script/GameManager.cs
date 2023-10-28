@@ -8,7 +8,15 @@ public class GameManager : MonoBehaviour
 
     public float winrate = 0.5f;
 
-    public int NpcIndex = 0;
+    public int NpcIndex = 1;
+
+    public string NpcSelected;
+
+    public bool old_man_talked = false;
+    public bool plice_chief_talked = false;
+    public bool mail_man_talked = false;
+    public bool female_butler_talked = false;
+    public bool young_doctor_talked = false;
     // Start is called before the first frame update
     void Start()
     {
