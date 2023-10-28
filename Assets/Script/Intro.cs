@@ -3,12 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-// [System.Serializable]
-// public class DialogueData {
-//     public List<DialogueEntry> Intro;
-// }
-
-
 public class Intro : MonoBehaviour
 {
     public GameObject currentPanel;

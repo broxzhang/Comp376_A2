@@ -65,9 +65,13 @@
         ],
         "Npc1": [
             {
-              "text": "Hello, player!",
+              "text": "Hello, What do you want to know?",
               "order": 1,
-              "isOption": false
+              "isOption": true,
+              "Option_One_Text": "I would like to know is there",
+              "Option_One_nextOrder": 3,
+              "Option_Two_Text":"No, thanks.",
+              "Option_Two_nextOrder": 4
             },
             {
               "text": "Do you want to join our team?",
@@ -232,81 +236,52 @@
         }
         ],
         "Npc4": [
-        {
-            "text": "Hello, player!",
-            "order": 1,
-            "isOption": false
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        }
+            {
+                "text": "Hello, What do you want to know?",
+                "order": 1,
+                "isOption": true,
+                "Option_One_Text": "询问有关聚会当天的细节。",
+                "Option_One_nextOrder": 2,
+                "Option_Two_Text":"询问女管家个人的事情。",
+                "Option_Two_nextOrder": 3
+            },
+            {
+                "text": "",
+                "order": 2,
+                "isOption": true,
+                "Option_One_Text": "询问女管家是否注意到了什么不寻常的事情。",
+                "Option_One_nextOrder": 4,
+                "Option_Two_Text":"询问女管家当天负责的工作内容。",
+                "Option_Two_nextOrder": 5            },
+            {
+                "text": "",
+                "order": 3,
+                "isOption": true,
+                "Option_One_Text": "直接质疑女管家是否参与了谋杀.",
+                "Option_One_nextOrder": 6,
+                "Option_Two_Text":"对女管家进行无关紧要的闲聊。",
+                "Option_Two_nextOrder": 7
+            },
+            {
+                "text": "Yes, I did notice that the library door was ajar, which is unusual since the master always keeps it locked.",
+                "order": 4,
+                "isOption": false
+            },
+            {
+                "text": "I was mostly busy with preparing the guest rooms and ensuring all the dinner arrangements were perfect.",
+                "order": 5,
+                "isOption": false
+            },
+            {
+                "text": "I can't believe you'd think I was involved. I've been loyal to this household for over 20 years!",
+                "order": 6,
+                "isOption": false
+            },
+            {
+                "text": "Well, the weather has been lovely lately, hasn't it? Perfect for a garden stroll.",
+                "order": 7,
+                "isOption": false
+            }
         ],
         "Npc5": [
         {

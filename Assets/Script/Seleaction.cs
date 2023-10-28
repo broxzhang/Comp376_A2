@@ -14,7 +14,6 @@ public class DialogueData {
     public List<DialogueEntry> Npc3;
     public List<DialogueEntry> Npc4;
     public List<DialogueEntry> Npc5;
-    // ... 其他NPC列表 ...
 }
 
 [System.Serializable]
@@ -25,12 +24,18 @@ public class DialogueContainer {
 [System.Serializable]
 public class DialogueEntry {
     public string text;
+    
     public int order;
+
     public bool isOption;
 
     public string Option_One_Text;
 
+    public int Option_One_nextOrder;
+
     public string Option_Two_Text;
+
+    public int Option_Two_nextOrder;
 
     public int nextOrder;
 }
@@ -52,12 +57,6 @@ public class Seleaction : MonoBehaviour
     float winRate = 0.0f;
 
     int NpcIndex = 0;
-
-    public List<DialogueEntry> dialoguesList_Npc1;
-    public List<DialogueEntry> dialoguesList_Npc2;
-    public List<DialogueEntry> dialoguesList_Npc3;
-    public List<DialogueEntry> dialoguesList_Npc4;
-    public List<DialogueEntry> dialoguesList_Npc5;
 
     public Image displayImage;
     public Sprite[] imageOptions;
@@ -111,23 +110,23 @@ public class Seleaction : MonoBehaviour
 
     void GetDialogues( int NpcIndex )
     {   
-        if (NpcIndex == 0)
+        if (NpcIndex == 1)
         {
             this.currentDialogues = this.dialogues.dialogues.Npc1;
         }
-        else if (NpcIndex == 1)
+        else if (NpcIndex == 2)
         {
             this.currentDialogues = this.dialogues.dialogues.Npc2;
         }
-        else if (NpcIndex == 2)
+        else if (NpcIndex == 3)
         {
             this.currentDialogues = this.dialogues.dialogues.Npc3;
         }
-        else if (NpcIndex == 3)
+        else if (NpcIndex == 4)
         {
             this.currentDialogues = this.dialogues.dialogues.Npc4;
         }
-        else if (this.NpcIndex == 4)
+        else if (this.NpcIndex == 5)
         {
             this.currentDialogues = this.dialogues.dialogues.Npc5;
         }
