@@ -90,7 +90,7 @@ public class Summary : MonoBehaviour
         }
 
         replayButton.onClick.AddListener(()=> {
-            SceneManager.LoadScene("Chapter_One");
+            SceneManager.LoadScene("Underground_Mystery");
         });
         
     }

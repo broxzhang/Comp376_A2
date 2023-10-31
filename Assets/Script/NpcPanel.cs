@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using TMPro;
-
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -28,8 +26,8 @@ public class NpcPanel : MonoBehaviour
             btn.onClick.AddListener(() => OnButtonClick(btn));
         }
 
-        this.winRate = GameManager.instance.winrate * 100.0f;
-        UpdateWinRate(this.winRate);
+        this.winRate = ConvertRange(GameManager.instance.winrate);
+        UpdateWinRate();
 
         next_chapter.onClick.AddListener(() => {
             currentPanel.SetActive(false);
@@ -38,10 +36,17 @@ public class NpcPanel : MonoBehaviour
 
     }
 
+    void OnEnable()
+    {
+        UpdateWinRate();
+
+    }
+
     // Update is called once per frame
     void Update()
     {
-        
+        UpdateWinRate();
+
         foreach (Button btn in npcButtons) {
             if (btn.name == "old_man"){
                 btn.gameObject.SetActive(!GameManager.instance.old_man_talked);
@@ -72,6 +77,11 @@ public class NpcPanel : MonoBehaviour
         }
     }
 
+    float ConvertRange(float value)
+    {
+        return (int)Math.Round((value + 1) * 50);
+    }
+
     void OnButtonClick(Button buttonClicked)
     {
         if(buttonClicked.name == "old_man") {
@@ -94,8 +104,8 @@ public class NpcPanel : MonoBehaviour
         seleactionPanel.SetActive(true);
     }
 
-    public void UpdateWinRate(float winRate)
+    public void UpdateWinRate()
     {
-        winRateText.text = "Wintate: " + winRate.ToString() + "%";
+        winRateText.text = "Wintate: " + ConvertRange(GameManager.instance.winrate) + "%";
     }
 }

@@ -1,4 +1,4 @@
-using System.Collections;
+using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -90,7 +90,7 @@ public class Seleaction : MonoBehaviour
     {
         optionOneButton.gameObject.SetActive(true);
         optionTwoButton.gameObject.SetActive(true);
-        this.winRate = GameManager.instance.winrate * 100.0f;
+        this.winRate = ConvertRange(GameManager.instance.winrate);
         this.NpcIndex = GameManager.instance.NpcIndex;
 
         index = 0;
@@ -107,12 +107,16 @@ public class Seleaction : MonoBehaviour
 
         currentDialogue = currentDialogues[index];
 
-        UpdateWinRate(this.winRate);
+        UpdateWinRate();
 
         StartDialogues(currentDialogue.text);
 
     }
 
+    float ConvertRange(float value)
+    {
+        return (int)Math.Round((value + 1) * 50);
+    }
     // Update is called once per frame
     void Update()
     {
@@ -165,9 +169,9 @@ public class Seleaction : MonoBehaviour
 
     }
 
-    public void UpdateWinRate(float winRate)
+    public void UpdateWinRate()
     {
-        winRateText.text = "Wintate: " + winRate.ToString() + "%";
+        winRateText.text = "Wintate: " + ConvertRange(GameManager.instance.winrate) + "%";
     }
 
     public DialogueEntry GetDialogueByOrder(int order)
@@ -195,7 +199,7 @@ public class Seleaction : MonoBehaviour
             if (currentDialogue.order >= 4)
             {
                 GameManager.instance.winrate += currentDialogue.Option_WinRate;
-                UpdateWinRate(GameManager.instance.winrate * 100.0f);
+                UpdateWinRate();
             }
 
             if (currentDialogue.order == 4)
@@ -253,7 +257,7 @@ public class Seleaction : MonoBehaviour
             if (currentDialogue.order >= 4)
             {
                 GameManager.instance.winrate += currentDialogue.Option_WinRate;
-                UpdateWinRate(GameManager.instance.winrate * 100.0f);
+                UpdateWinRate();
             }
 
             if (currentDialogue.order == 5)
