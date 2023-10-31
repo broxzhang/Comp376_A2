@@ -16,6 +16,7 @@ public class NpcPanel : MonoBehaviour
 
     public GameObject currentPanel;
     public GameObject seleactionPanel;
+    public GameObject confrontPanel;
 
     float winRate = 0.0f;
 
@@ -29,6 +30,11 @@ public class NpcPanel : MonoBehaviour
 
         this.winRate = GameManager.instance.winrate * 100.0f;
         UpdateWinRate(this.winRate);
+
+        next_chapter.onClick.AddListener(() => {
+            currentPanel.SetActive(false);
+            confrontPanel.SetActive(true);
+        });
 
     }
 

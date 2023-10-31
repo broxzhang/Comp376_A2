@@ -16,7 +16,7 @@ public class DialogueTarget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = Random.Range(450f, 800f);
+        speed = Random.Range(250f, 500f);
         rectTransform = GetComponent<RectTransform>();
         parentRectTransform = GameObject.Find("HitPanel").GetComponent<RectTransform>();
         

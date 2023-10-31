@@ -63,303 +63,271 @@
                 "nextOrder": -1
             }
         ],
-        "Npc1": [
+        "Librarian": [
             {
-              "text": "Hello, What do you want to know?",
-              "order": 1,
-              "isOption": true,
-              "Option_One_Text": "I would like to know is there",
-              "Option_One_nextOrder": 3,
-              "Option_Two_Text":"No, thanks.",
-              "Option_Two_nextOrder": 4
-            },
-            {
-              "text": "Do you want to join our team?",
-              "order": 2,
-              "isOption": true,
-              "Option_One_Text": "Yes, I'd love to!",
-              "Option_Two_Text": "No, thanks."
-            }
-        ],
-        "Npc2": [
-        {
-            "text": "Hello, player!",
-            "order": 1,
-            "isOption": false
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        }
-        ],
-        "Npc3": [
-        {
-            "text": "Hello, player!",
-            "order": 1,
-            "isOption": false
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        }
-        ],
-        "Npc4": [
-            {
-                "text": "Hello, What do you want to know?",
+                "text": "Ah, welcome to the library. Is there a particular topic you're interested in?",
                 "order": 1,
                 "isOption": true,
-                "Option_One_Text": "询问有关聚会当天的细节。",
+                "Option_One_Text": "Ask about books on heart diseases or related medications.",
                 "Option_One_nextOrder": 2,
-                "Option_Two_Text":"询问女管家个人的事情。",
+                "Option_Two_Text": "Ask if the librarian has any interesting novel recommendations.",
                 "Option_Two_nextOrder": 3
             },
             {
-                "text": "",
+                "text": "Heart diseases, you say? What exactly are you looking for?",
                 "order": 2,
                 "isOption": true,
-                "Option_One_Text": "询问女管家是否注意到了什么不寻常的事情。",
+                "Option_One_Text": "Inquire about specialized books on rare heart medications.",
                 "Option_One_nextOrder": 4,
-                "Option_Two_Text":"询问女管家当天负责的工作内容。",
-                "Option_Two_nextOrder": 5            },
+                "Option_Two_Text": "Request any medical books related to heart diseases.",
+                "Option_Two_nextOrder": 5
+            },
             {
-                "text": "",
+                "text": "Looking for something intriguing to read?",
                 "order": 3,
                 "isOption": true,
-                "Option_One_Text": "直接质疑女管家是否参与了谋杀.",
+                "Option_One_Text": "Ask if there are novels themed around heart diseases.",
                 "Option_One_nextOrder": 6,
-                "Option_Two_Text":"对女管家进行无关紧要的闲聊。",
+                "Option_Two_Text": "Just looking for a book to pass the time.",
                 "Option_Two_nextOrder": 7
             },
             {
-                "text": "Yes, I did notice that the library door was ajar, which is unusual since the master always keeps it locked.",
+                "text": "Indeed, we do have a few rare publications on that subject. Let me show you where they are.",
                 "order": 4,
-                "isOption": false
+                "isOption": false,
+                "Option_WinRate": 0.2
             },
             {
-                "text": "I was mostly busy with preparing the guest rooms and ensuring all the dinner arrangements were perfect.",
+                "text": "Certainly, we have a comprehensive section on medical science. Follow me, please.",
                 "order": 5,
-                "isOption": false
+                "isOption": false,
+                "Option_WinRate": 0.0
             },
             {
-                "text": "I can't believe you'd think I was involved. I've been loyal to this household for over 20 years!",
+                "text": "Well, we have a wide range of novels. Any particular genre you prefer?",
                 "order": 6,
-                "isOption": false
+                "isOption": false,
+                "Option_WinRate": 0.0
             },
             {
-                "text": "Well, the weather has been lovely lately, hasn't it? Perfect for a garden stroll.",
+                "text": "Heart diseases in novels? That's quite specific, but I'll check. Please wait a moment.",
                 "order": 7,
-                "isOption": false
+                "isOption": false,
+                "Option_WinRate": -0.2
             }
         ],
-        "Npc5": [
-        {
-            "text": "Hello, player!",
-            "order": 1,
-            "isOption": false
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        },
-        {
-            "text": "Do you want to join our team?",
-            "order": 2,
-            "isOption": true,
-            "Option_One_Text": "Yes, I'd love to!",
-            "Option_Two_Text": "No, thanks."
-        }
-        ]           
+        "Chief": [
+            {
+                "text": "Good day, detective. What can I assist you with?",
+                "order": 1,
+                "isOption": true,
+                "Option_One_Text": "Ask if the chief noticed any unusual activities around the victim or suspect.",
+                "Option_One_nextOrder": 2,
+                "Option_Two_Text": "Ask if the chief encountered any interesting or strange cases recently.",
+                "Option_Two_nextOrder": 3
+            },
+            {
+                "text": "Let me think for a moment...",
+                "order": 2,
+                "isOption": true,
+                "Option_One_Text": "Inquire if the chief recalls any suspicious incidents related to the victim or suspect.",
+                "Option_One_nextOrder": 4,
+                "Option_Two_Text": "Confirm the usual policing around the victim or suspect’s area.",
+                "Option_Two_nextOrder": 5
+            },
+            {
+                "text": "Every day in law enforcement brings its own surprises.",
+                "order": 3,
+                "isOption": true,
+                "Option_One_Text": "Ask if the chief remembers dealing with any bizarre or odd cases.",
+                "Option_One_nextOrder": 6,
+                "Option_Two_Text": "Just curious about the chief’s daily duties.",
+                "Option_Two_nextOrder": 7
+            },
+            {
+                "text": "Indeed, there was a suspicious incident near the victim's residence recently.",
+                "order": 4,
+                "isOption": false,
+                "Option_WinRate": 0.2
+            },
+            {
+                "text": "The areas around the victim and suspect were regularly patrolled, nothing unusual reported.",
+                "order": 5,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "Well, we do encounter bizarre cases, but nothing directly related to this investigation.",
+                "order": 6,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "Policing is a mix of routine and unexpected events. You always have to be prepared.",
+                "order": 7,
+                "isOption": false,
+                "Option_WinRate": -0.2
+            }
+        ],        
+        "Postman": [
+            {
+                "text": "Good day! Anything postal-related I can help you with?",
+                "order": 1,
+                "isOption": true,
+                "Option_One_Text": "Ask if the postman noticed any unusual mail for the victim or suspect recently.",
+                "Option_One_nextOrder": 2,
+                "Option_Two_Text": "Ask if the postman encountered any interesting or strange mail.",
+                "Option_Two_nextOrder": 3
+            },
+            {
+                "text": "Hmm, let me think...",
+                "order": 2,
+                "isOption": true,
+                "Option_One_Text": "Inquire if the postman remembers the victim receiving any urgent or anonymous letters.",
+                "Option_One_nextOrder": 4,
+                "Option_Two_Text": "Confirm the usual mail correspondence for the victim or suspect.",
+                "Option_Two_nextOrder": 5
+            },
+            {
+                "text": "You never know what you'll find in the mail!",
+                "order": 3,
+                "isOption": true,
+                "Option_One_Text": "Ask if the postman remembers the victim receiving any advertisement or promotional letters.",
+                "Option_One_nextOrder": 6,
+                "Option_Two_Text": "Just curious about the postman's daily work.",
+                "Option_Two_nextOrder": 7
+            },
+            {
+                "text": "Now that you mention it, there was an anonymous letter sent to the victim a few days back.",
+                "order": 4,
+                "isOption": false,
+                "Option_WinRate": 0.2
+            },
+            {
+                "text": "Both the victim and the suspect had regular mail, nothing out of the ordinary.",
+                "order": 5,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "It's a bit of everything, really. Every day is different, which keeps things interesting.",
+                "order": 6,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "Adverts and promos? Sure, they got plenty of those. Nothing unusual there.",
+                "order": 7,
+                "isOption": false,
+                "Option_WinRate": -0.2
+            }
+        ],
+        "Housekeeper": [
+            {
+                "text": "Good day, may I assist you with something?",
+                "order": 1,
+                "isOption": true,
+                "Option_One_Text": "Inquire about the details of the party that day.",
+                "Option_One_nextOrder": 2,
+                "Option_Two_Text": "Ask about the housekeeper's personal matters.",
+                "Option_Two_nextOrder": 3
+            },
+            {
+                "text": "Certainly, what would you like to know?",
+                "order": 2,
+                "isOption": true,
+                "Option_One_Text": "Ask if the housekeeper noticed anything unusual.",
+                "Option_One_nextOrder": 4,
+                "Option_Two_Text": "Inquire about the housekeeper's responsibilities that day.",
+                "Option_Two_nextOrder": 5
+            },
+            {
+                "text": "How can I help you?",
+                "order": 3,
+                "isOption": true,
+                "Option_One_Text": "Directly question if the housekeeper was involved in the murder.",
+                "Option_One_nextOrder": 6,
+                "Option_Two_Text": "Engage in trivial conversation with the housekeeper.",
+                "Option_Two_nextOrder": 7
+            },
+            {
+                "text": "Indeed, I did notice that the library door was ajar, which is most unusual since the master always keeps it locked.",
+                "order": 4,
+                "isOption": false,
+                "Option_WinRate":0.2
+            },
+            {
+                "text": "I was primarily occupied with preparing the guest rooms and ensuring that all arrangements for the dinner were impeccable.",
+                "order": 5,
+                "isOption": false,
+                "Option_WinRate":0.0
+            },
+            {
+                "text": "Well, the weather has been delightful recently, hasn't it? Just perfect for a walk in the garden.",
+                "order": 6,
+                "isOption": false,
+                "Option_WinRate":0.0
+            },
+            {
+                "text": "How could you possibly think that? I have been devoted to this household for over 20 years!",
+                "order": 7,
+                "isOption": false,
+                "Option_WinRate":-0.2
+            }
+        ],
+        "Doctor": [
+            {
+                "text": "Greetings! How may I assist you in this medical inquiry?",
+                "order": 1,
+                "isOption": true,
+                "Option_One_Text": "Ask if the doctor noticed any unusual symptoms or conditions in the victim or suspect.",
+                "Option_One_nextOrder": 2,
+                "Option_Two_Text": "Ask if the doctor encountered any peculiar or rare medical cases.",
+                "Option_Two_nextOrder": 3
+            },
+            {
+                "text": "Let me consider...",
+                "order": 2,
+                "isOption": true,
+                "Option_One_Text": "Inquire if the doctor recalls any unusual medical reports concerning the victim or suspect.",
+                "Option_One_nextOrder": 4,
+                "Option_Two_Text": "Confirm the general health status of the victim and suspect.",
+                "Option_Two_nextOrder": 5
+            },
+            {
+                "text": "Medicine always has its share of mysteries.",
+                "order": 3,
+                "isOption": true,
+                "Option_One_Text": "Ask if the doctor has dealt with any strange or uncommon illnesses.",
+                "Option_One_nextOrder": 6,
+                "Option_Two_Text": "Just curious about the doctor’s daily medical practice.",
+                "Option_Two_nextOrder": 7
+            },
+            {
+                "text": "Interestingly, the victim had symptoms that were not typical for their medical history.",
+                "order": 4,
+                "isOption": false,
+                "Option_WinRate": 0.2
+            },
+            {
+                "text": "Both the victim and the suspect seemed to be in normal health, based on their records.",
+                "order": 5,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "Rare medical cases are not uncommon in my practice, but none are related to this case.",
+                "order": 6,
+                "isOption": false,
+                "Option_WinRate": 0.0
+            },
+            {
+                "text": "Medical practice is a balance of routine check-ups and unexpected diagnoses.",
+                "order": 7,
+                "isOption": false,
+                "Option_WinRate": -0.2
+            }
+        ]        
     }
   }
   
